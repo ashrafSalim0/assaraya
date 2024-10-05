@@ -11,7 +11,7 @@ import Header from '../component/header.js';
 
 const Stack = createNativeStackNavigator();
 
-function HomePage() {
+function Search() {
  const {t} = useTranslation();
  const { colors } = useTheme(); 
  const styles = getStyles(colors); 
@@ -40,4 +40,4 @@ function HomePage() {
 
 
 
-export default HomePage;
+export default Search;

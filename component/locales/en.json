@@ -1,5 +1,15 @@
 {
-    "home-screen": {
-        "title": "Home Page"
+    "searchscreen": {
+        "title": "Search",
+        "search": "Search...",
+        "toproducts": "Top Products For You",
+        "showall": "Show All",
+        "categories": "Categories",
+        "all": "All",
+        "entertainment": "Entertainment",
+        "gaming": "Gaming",
+        "subs": "Subscriptions",
+        "topgames": "Top Games For You"
+
     }
 }

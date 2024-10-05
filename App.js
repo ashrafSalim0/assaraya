@@ -8,7 +8,7 @@ import i18next, {languageResources} from './services/i18next';
 import {styles, MyTheme,} from './style/style.js';
 import { DarkTheme, LightTheme } from './style/themes.js';
 import { useColorScheme } from 'react-native';
-import HomePage from './screens/homepage.js';
+import Search from './screens/search.js';
 
 
 
@@ -23,9 +23,9 @@ function App() {
     <NavigationContainer theme={colorScheme === "dark" ?  LightTheme : DarkTheme}>
       <I18nextProvider>
       <Stack.Navigator 
-      initialRouteName='HomePage'
+      initialRouteName='Search'
       screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="HomePage" component={HomePage} />
+        <Stack.Screen name="Search" component={Search} />
       </Stack.Navigator>
       </I18nextProvider>
     </NavigationContainer>
