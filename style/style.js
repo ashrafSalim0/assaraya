@@ -233,24 +233,41 @@ const getStyles = (colors) => StyleSheet.create({
 
   profile_prefrences_container: {
     width: '90%',
-    height: 200,
+    height: 160,
     backgroundColor: colors.primary,
     alignSelf: 'center',
     marginTop: 30,
     borderRadius: 10,
     alignItems: 'center',
     paddingTop: 10,
+    paddingBottom: 10,
+    gap: 5,
   },
 
   prefrences_btn: {
     width: '90%',
-    height: '33%',
-    backgroundColor: 'green',
+    height: '30%',
     position: 'relative',
     alignItems: 'center',
-    flexDirection: 'row'
-  }
+    flexDirection: 'row',
+    justifyContent:'space-between'
+  },
 
+  prefrences_btn_icon: {
+    width: 37,
+    height: 37,
+    backgroundColor: colors.secondary,
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },  
+
+
+  prefrences_btn_title: {
+    color: colors.text,
+    fontWeight: 'bold',
+    fontSize: 12,
+  }
   
 });
 

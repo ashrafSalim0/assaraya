@@ -60,7 +60,31 @@ function Profile() {
 
         <View style={styles.profile_prefrences_container}>
           <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
-      <Image style={[styles.icon, {alignSelf: '',}]} source={icon.chevron_left} />
+            <View style={{flexDirection: 'row', alignItems: 'center', gap: 5,}}>
+            <View style={styles.prefrences_btn_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.wallet} />
+            </View>
+            <Text style={styles.prefrences_btn_title}>Test long text</Text>
+            </View>
+            <Image style={[styles.icon, {width: 24, height: 24, tintColor: colors.text}]} source={icon.chevron_right} />
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
+            <View style={{flexDirection: 'row', alignItems: 'center', gap: 5,}}>
+            <View style={styles.prefrences_btn_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.wallet} />
+            </View>
+            <Text style={styles.prefrences_btn_title}>Test long text</Text>
+            </View>
+            <Image style={[styles.icon, {width: 24, height: 24, tintColor: colors.text}]} source={icon.chevron_right} />
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
+            <View style={{flexDirection: 'row', alignItems: 'center', gap: 5,}}>
+            <View style={styles.prefrences_btn_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.wallet} />
+            </View>
+            <Text style={styles.prefrences_btn_title}>Test long text</Text>
+            </View>
+            <Image style={[styles.icon, {width: 24, height: 24, tintColor: colors.text}]} source={icon.chevron_right} />
           </TouchableOpacity>
         </View>
       </View>

@@ -4,6 +4,7 @@ const icon = {
     star: require('../assets/icons/png/filled/star.png'),
     adjustments_alt: require('../assets/icons/png/outline/adjustments-alt.png'),
     chevron_left: require('../assets/icons/png/outline/chevron-left.png'),
+    chevron_right: require('../assets/icons/png/outline/chevron-right.png'),
     gamepad: require('../assets/icons/png/outline/device-gamepad-2.png'),
     user_circle: require('../assets/icons/png/outline/user-circle.png'),
     wallet: require('../assets/icons/png/outline/wallet.png'),
