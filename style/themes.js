@@ -19,6 +19,6 @@ export const LightTheme = {
       background: '#121212',
       text: '#FAFAFA',
       border: 'rgb(199, 199, 204)',
-      notification: 'rgb(255, 69, 58)',
+      offwhite: '#A0A0A0',
     },
   };

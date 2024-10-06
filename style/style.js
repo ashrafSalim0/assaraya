@@ -173,6 +173,84 @@ const getStyles = (colors) => StyleSheet.create({
   },
 
 
+
+  pfp: {
+    width: 130,
+    height: 130,
+    borderRadius: 100,
+    backgroundColor: 'green',
+    alignSelf: 'center',
+    marginTop: 50,
+  },
+
+  pfp_name: {
+    alignSelf:'center',
+    marginTop: 15,
+    color: colors.text,
+    fontSize: 18,
+    fontWeight: 'bold'
+  },
+
+  pfp_name_desc: {
+    alignSelf: 'center',
+    marginTop: 2.5,
+    color: colors.offwhite,
+  },
+
+  profile_main_btns: {
+    width: '90%',
+    height: 85,
+    backgroundColor: colors.primary,
+    alignSelf: 'center',
+    marginTop: 30,
+    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around'
+  },
+
+  profile_main_item: {
+    width: '20%',
+    height: '80%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 5
+  },
+
+  profile_main_item_icon: {
+    width: 40,
+    height: 40,
+    backgroundColor: colors.secondary,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+
+  profile_main_item_title: {
+    color: colors.text,
+    fontSize: 12
+  },
+
+  profile_prefrences_container: {
+    width: '90%',
+    height: 200,
+    backgroundColor: colors.primary,
+    alignSelf: 'center',
+    marginTop: 30,
+    borderRadius: 10,
+    alignItems: 'center',
+    paddingTop: 10,
+  },
+
+  prefrences_btn: {
+    width: '90%',
+    height: '33%',
+    backgroundColor: 'green',
+    position: 'relative',
+    alignItems: 'center',
+    flexDirection: 'row'
+  }
+
   
 });
 

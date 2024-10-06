@@ -10,7 +10,7 @@ import icon from '../style/load_icons.js';
 
 const Stack = createNativeStackNavigator();
 
-function Header() {
+function Header({title}) {
  const {t} = useTranslation();
  const { colors } = useTheme(); 
  const styles = getStyles(colors); 
@@ -18,10 +18,10 @@ function Header() {
     <I18nextProvider>
       <StatusBar barStyle="light-content" backgroundColor="#121212" />
       <View style={styles.header}>
-        <TouchableOpacity style={styles.header_pfp} activeOpacity={0.7}>
-      <Image style={styles.icon} source={''} />
+        <TouchableOpacity  activeOpacity={0.7}>
+      <Image style={styles.icon} source={icon.chevron_left} />
       </TouchableOpacity>
-      <Text style={styles.header_text}>{t('home-screen.title')}</Text>
+      <Text style={styles.header_text}>{title}</Text>
         <TouchableOpacity activeOpacity={0.7}>
       <Image style={styles.icon} source={icon.menu} />
       </TouchableOpacity>

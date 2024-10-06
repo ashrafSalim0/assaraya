@@ -10,6 +10,12 @@
         "gaming": "Gaming",
         "subs": "Subscriptions",
         "topgames": "Top Games For You"
-
+    },
+    "profile": {
+        "title": "Profile",
+        "mygames": "My Games",
+        "subscription": "Subscription",
+        "payment": "Payment",
+        "profile": "Profile"
     }
 }

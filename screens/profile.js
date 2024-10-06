@@ -22,101 +22,47 @@ function Profile() {
     <I18nextProvider>
       <ScrollView>
       <StatusBar barStyle="light-content" backgroundColor="#121212" />
-      <Header title={t('searchscreen.title')}/>
+      <Header title={t('profile.title')}/>
       <View style={styles.container}>
-        <View style={styles.slider}></View>
-        <View style={styles.slider_indicator}>
-            <View style={[styles.slider_indicator_item, styles.slider_indicator_item_first]}></View>
-            <View style={[styles.slider_indicator_item, styles.slider_indicator_item_second, styles.slider_indicator_item_active]}></View>
-            <View style={[styles.slider_indicator_item, styles.slider_indicator_item_third]}></View>
-            <View style={[styles.slider_indicator_item, styles.slider_indicator_item_forth]}></View>
+        <Image source={require('../assets/images/pfp.jpg')} style={styles.pfp}></Image>
+        <Text style={styles.pfp_name}>Ashraf Salim</Text>
+        <Text style={styles.pfp_name_desc}>ashraf.salim.alsayid@gmail.com</Text>
+        <View style={styles.profile_main_btns}>
+          <TouchableOpacity activeOpacity={0.7} style={styles.profile_main_item}>
+            <View style={styles.profile_main_item_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.gamepad} />
+            </View>
+            <Text style={styles.profile_main_item_title}>{t('profile.mygames')}</Text>
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7} style={styles.profile_main_item}>
+            <View style={styles.profile_main_item_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.apps} />
+            </View>
+            <Text style={styles.profile_main_item_title}>{t('profile.subscription')}</Text>
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7} style={styles.profile_main_item}>
+            <View style={styles.profile_main_item_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.wallet} />
+            </View>
+            <Text style={styles.profile_main_item_title}>{t('profile.payment')}</Text>
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7} style={styles.profile_main_item}>
+            <View style={styles.profile_main_item_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.user_circle} />
+            </View>
+            <Text style={styles.profile_main_item_title}>{t('profile.profile')}</Text>
+          </TouchableOpacity>
+         
+          
         </View>
-        <View style={styles.search_container}>
-          <TouchableOpacity activeOpacity={0.7}>
-        <Image style={[styles.icon,{width: 24, height: 24,}]} source={icon.search} />
-        </TouchableOpacity>
-        <TextInput placeholderTextColor={'#404040'} cursorColor={colors.offwhite}  placeholder={t('searchscreen.search')} style={styles.search_input}></TextInput>
-        <TouchableOpacity activeOpacity={0.7}>
-        <Image style={[styles.icon,{width: 24, height: 24,}]} source={icon.adjustments_alt} />
-        </TouchableOpacity>
-        </View>
-        <View style={styles.category_container}>
-          <Text style={{color: colors.text, fontSize: 16, fontWeight: 'bold'}}>{t('searchscreen.categories')}</Text>
-          <TouchableOpacity activeOpacity={0.7}>
-          <Text style={{color: colors.secondary, fontSize: 12, fontWeight: 'thin'}}>{t('searchscreen.showall')}</Text>
+
+
+
+        <View style={styles.profile_prefrences_container}>
+          <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
+      <Image style={[styles.icon, {alignSelf: '',}]} source={icon.chevron_left} />
           </TouchableOpacity>
         </View>
-          <ScrollView style={styles.categories_container} horizontal={true} showsHorizontalScrollIndicator={false}>
-          <TouchableOpacity activeOpacity={0.7} style={styles.categories_button}>
-          <Text style={styles.category_title}>{t('searchscreen.showall')}</Text>
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.7} style={styles.categories_button}>
-          <Text style={styles.category_title}>{t('searchscreen.entertainment')}</Text>
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.7} style={styles.categories_button}>
-          <Text style={styles.category_title}>{t('searchscreen.gaming')}</Text>
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.7} style={[styles.categories_button, {marginRight: 20}]}>
-          <Text style={styles.category_title}>{t('searchscreen.subs')}</Text>
-          </TouchableOpacity>
-          </ScrollView>
-          <View style={{    marginTop: 10,}}/>
-          <View style={styles.category_container}>
-          <Text style={{color: colors.text, fontSize: 16, fontWeight: 'bold'}}>{t('searchscreen.topgames')}</Text>
-          <TouchableOpacity activeOpacity={0.7}>
-          <Text style={{color: colors.secondary, fontSize: 12, fontWeight: 'thin'}}>{t('searchscreen.showall')}</Text>
-          </TouchableOpacity>
-          </View>
-          <View style={styles.topgamesfu}>
-            <View style={styles.topgamecontainer}>
-            <TouchableOpacity activeOpacity={0.7} style={styles.topgameitem}>
-            <Image style={styles.topgamepfp} source={require('../assets/images/poster.png')} />
-            <View style={styles.topgameinfos}>
-              <Text style={styles.topgametitle}>Spider Man</Text>
-              <Text style={styles.topgamedesc}>Action, RPG, Drama</Text>
-              <View style={{flexDirection:'row', gap: 2.5, alignItems:'center', justifyContent:"flex-start"}}>
-              <Image style={[{width: 10, height: 10, tintColor: 'gold'}]} source={icon.star} />
-              <Text style={{fontSize: 10, color: colors.offwhite, marginTop: 2}}>3.9</Text>
-              </View>
-            </View>
-            </TouchableOpacity>
-            <TouchableOpacity activeOpacity={0.7} style={styles.topgameitem}>
-            <Image style={styles.topgamepfp} source={require('../assets/images/poster.png')} />
-            <View style={styles.topgameinfos}>
-              <Text style={styles.topgametitle}>Spider Man</Text>
-              <Text style={styles.topgamedesc}>Action, RPG, Drama</Text>
-              <View style={{flexDirection:'row', gap: 2.5, alignItems:'center', justifyContent:"flex-start"}}>
-              <Image style={[{width: 10, height: 10, tintColor: 'gold'}]} source={icon.star} />
-              <Text style={{fontSize: 10, color: colors.offwhite, marginTop: 2}}>3.9</Text>
-              </View>
-            </View>
-            </TouchableOpacity>
-            </View>
-            <View style={styles.topgamecontainer}>
-            <TouchableOpacity activeOpacity={0.7} style={styles.topgameitem}>
-            <Image style={styles.topgamepfp} source={require('../assets/images/poster.png')} />
-            <View style={styles.topgameinfos}>
-              <Text style={styles.topgametitle}>Spider Man</Text>
-              <Text style={styles.topgamedesc}>Action, RPG, Drama</Text>
-              <View style={{flexDirection:'row', gap: 2.5, alignItems:'center', justifyContent:"flex-start"}}>
-              <Image style={[{width: 10, height: 10, tintColor: 'gold'}]} source={icon.star} />
-              <Text style={{fontSize: 10, color: colors.offwhite, marginTop: 2}}>3.9</Text>
-              </View>
-            </View>
-            </TouchableOpacity>
-            <TouchableOpacity activeOpacity={0.7} style={styles.topgameitem}>
-            <Image style={styles.topgamepfp} source={require('../assets/images/poster.png')} />
-            <View style={styles.topgameinfos}>
-              <Text style={styles.topgametitle}>Spider Man</Text>
-              <Text style={styles.topgamedesc}>Action, RPG, Drama</Text>
-              <View style={{flexDirection:'row', gap: 2.5, alignItems:'center', justifyContent:"flex-start"}}>
-              <Image style={[{width: 10, height: 10, tintColor: 'gold'}]} source={icon.star} />
-              <Text style={{fontSize: 10, color: colors.offwhite, marginTop: 2}}>3.9</Text>
-              </View>
-            </View>
-            </TouchableOpacity>
-            </View>
-          </View>
       </View>
       </ScrollView>
     </I18nextProvider>
