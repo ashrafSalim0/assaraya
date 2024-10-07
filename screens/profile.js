@@ -20,7 +20,6 @@ function Profile() {
  
   return (
     <I18nextProvider>
-      <ScrollView>
       <StatusBar barStyle="light-content" backgroundColor="#121212" />
       <Header title={t('profile.title')}/>
       <View style={styles.container}>
@@ -62,33 +61,37 @@ function Profile() {
           <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
             <View style={{flexDirection: 'row', alignItems: 'center', gap: 5,}}>
             <View style={styles.prefrences_btn_icon}>
-            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.wallet} />
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.bell} />
             </View>
-            <Text style={styles.prefrences_btn_title}>Test long text</Text>
-            </View>
-            <Image style={[styles.icon, {width: 24, height: 24, tintColor: colors.text}]} source={icon.chevron_right} />
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
-            <View style={{flexDirection: 'row', alignItems: 'center', gap: 5,}}>
-            <View style={styles.prefrences_btn_icon}>
-            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.wallet} />
-            </View>
-            <Text style={styles.prefrences_btn_title}>Test long text</Text>
+            <Text style={styles.prefrences_btn_title}>{t('profile.notifications')}</Text>
             </View>
             <Image style={[styles.icon, {width: 24, height: 24, tintColor: colors.text}]} source={icon.chevron_right} />
           </TouchableOpacity>
           <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
             <View style={{flexDirection: 'row', alignItems: 'center', gap: 5,}}>
             <View style={styles.prefrences_btn_icon}>
-            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.wallet} />
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.settings} />
             </View>
-            <Text style={styles.prefrences_btn_title}>Test long text</Text>
+            <Text style={styles.prefrences_btn_title}>{t('profile.preferences')}</Text>
+            </View>
+            <Image style={[styles.icon, {width: 24, height: 24, tintColor: colors.text}]} source={icon.chevron_right} />
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7} style={styles.prefrences_btn}>
+            <View style={{flexDirection: 'row', alignItems: 'center', gap: 5,}}>
+            <View style={styles.prefrences_btn_icon}>
+            <Image style={[styles.icon, {tintColor: colors.primary, width: 26, height: 26}]} source={icon.cloud_lock} />
+            </View>
+            <Text style={styles.prefrences_btn_title}>{t('profile.security')}</Text>
             </View>
             <Image style={[styles.icon, {width: 24, height: 24, tintColor: colors.text}]} source={icon.chevron_right} />
           </TouchableOpacity>
         </View>
+
+        <TouchableOpacity style={styles.logout_button}>
+          <Image style={[styles.icon, {width: 20, height: 20, tintColor: colors.text}]} source={icon.arc_left}/>
+          <Text style={styles.logout_title}>{t('profile.logout')}</Text>
+        </TouchableOpacity>
       </View>
-      </ScrollView>
     </I18nextProvider>
   );
 }

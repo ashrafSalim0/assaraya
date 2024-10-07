@@ -9,6 +9,13 @@ const icon = {
     user_circle: require('../assets/icons/png/outline/user-circle.png'),
     wallet: require('../assets/icons/png/outline/wallet.png'),
     apps: require('../assets/icons/png/outline/apps.png'),
+    bell: require('../assets/icons/png/outline/bell.png'),
+    settings: require('../assets/icons/png/outline/settings.png'),
+    cloud_lock: require('../assets/icons/png/outline/cloud-lock.png'),
+    arc_left: require('../assets/icons/png/outline/arrow-left-from-arc.png'),
+    credit_card: require('../assets/icons/png/outline/credit-card.png'),
+    brand_visa: require('../assets/icons/png/outline/brand-visa.png'),
+    brand_mastercard: require('../assets/icons/png/outline/brand-mastercard.png'),
 };
 
 export default icon

@@ -22,6 +22,8 @@ const getStyles = (colors) => StyleSheet.create({
 
   header_text: {
     color: colors.text,
+    fontWeight: 'bold',
+    opacity: 0.9
   },
 
   header_pfp: {
@@ -267,7 +269,167 @@ const getStyles = (colors) => StyleSheet.create({
     color: colors.text,
     fontWeight: 'bold',
     fontSize: 12,
+  },
+
+
+  logout_button: {
+    width: 110,
+    height: 35,
+    backgroundColor:'#dc2626',
+    borderRadius: 5,
+    position: 'absolute',
+    bottom: 30,
+    left: 20,
+    alignItems: 'center',
+    flexDirection: 'row',
+    paddingHorizontal: 5,
+    gap: 8,
+    justifyContent: 'center'
+  },
+
+  logout_title: {
+    color: "white",
+    fontWeight: 'bold'
+  },
+
+  userinfo_title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: colors.text,
+    marginTop: 30,
+    width: '90%',
+    alignSelf: 'center',
+    marginBottom: 10,
+  },
+
+  userinfo_container: {
+    alignItems:'center',
+    justifyContent: 'space-between',
+    width: '90%',
+    alignSelf: 'center',
+    flexDirection: 'row',
+    marginBottom: 5
+  },
+
+  userinfo_header: {
+    color: colors.text,
+    fontWeight: "bold",
+    opacity: 0.8
+  },
+
+  userinfo_desc: {
+    color: colors.text,
+    opacity: 0.8
+  },
+
+  cards_container: {
+    width: '90%',
+    height: 100,
+    alignSelf: 'center',
+    marginTop: 30,
+    flexDirection: 'row',
+    gap: 15
+  },
+
+  payment_card: {
+    width: '50%',
+    flex: 1,
+    backgroundColor: colors.primary,
+    borderRadius: 10,
+    paddingTop: 10,
+  },
+
+  icons_titles: {
+    width: '90%',
+    height: 25,
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexDirection: 'row'
+  },
+
+  payment_card_number: {
+    color: colors.text,
+    width: '90%',
+    alignSelf: 'center',
+    marginTop: 10,
+    fontSize: 12
+  },
+
+  payment_card_info: {
+    width: '90%',
+    height: 25,
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    position: 'absolute',
+    bottom: 5,
+  },
+
+  payment_card_info_text: {
+    fontSize: 12,
+    color: colors.text,
+    opacity: 0.8,
+  },
+
+  selected_payment_card: { 
+      borderColor: `rgba(145, 39, 227, 0.7)`, 
+      borderWidth: 2, 
+      borderStyle: 'solid' 
+    },
+  
+  dotted: {
+    width: '100%',
+    height: 1,
+    borderBottomWidth: 2,
+    borderStyle: 'dotted',
+    borderColor: colors.text,
+    marginTop: 50,
+    alignSelf: 'center',
+    marginBottom: 10,
+  },
+
+  prices_container: {
+    width: '90%',
+    alignSelf: 'center', 
+    flexDirection: 'column',
+    position:'absolute',
+    bottom: 0
+  },
+
+  prices_item_info: {
+    width: '100%',
+
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    marginBottom: 5
+  },
+
+  prices_item_text: {
+    fontSize: 14,
+    color: colors.text,
+    opacity: 1,
+  },
+
+
+  paynow: {
+    width: '100%',
+    height: 45,
+    backgroundColor: colors.secondary,
+    borderRadius: 10,
+    marginTop: 10,
+    marginBottom: 10,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  paynow_text: {
+    fontSize: 16,
+    color: "white",
+    fontWeight: 'bold',
   }
+  
   
 });
 

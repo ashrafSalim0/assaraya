@@ -10,7 +10,7 @@ import { DarkTheme, LightTheme } from './style/themes.js';
 import { useColorScheme } from 'react-native';
 import Search from './screens/search.js';
 import Profile from './screens/profile.js';
-
+import Payout from './screens/payout.js';
 
 
 
@@ -24,10 +24,11 @@ function App() {
     <NavigationContainer theme={colorScheme === "dark" ?  LightTheme : DarkTheme}>
       <I18nextProvider>
       <Stack.Navigator 
-      initialRouteName='Profile'
+      initialRouteName='Payout'
       screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Search" component={Search} />
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Payout" component={Payout} />
       </Stack.Navigator>
       </I18nextProvider>
     </NavigationContainer>

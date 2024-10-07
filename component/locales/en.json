@@ -16,6 +16,18 @@
         "mygames": "My Games",
         "subscription": "Subscription",
         "payment": "Payment",
-        "profile": "Profile"
+        "profile": "Profile",
+        "preferences": "Preferences",
+        "notifications": "Notifications",
+        "security": "Security",
+        "logout": "Log Out"
+    }, 
+    "payout": {
+        "title": "Pay out",
+        "userinfo": "User Information",
+        "userinfoname": "Full Name",
+        "userinfoemail": "Email Address",
+        "total": "Total",
+        "paynow": "Pay Now"
     }
 }
